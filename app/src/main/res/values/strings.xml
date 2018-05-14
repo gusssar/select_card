@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Выбор карт</string>
+    <string name="title_select_card">Выберите карты оставшиеся на руке</string>
+</resources>
