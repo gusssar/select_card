@@ -31,6 +31,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="0dp"
         android:onClick="GoVl"
-        android:text="Вы лоб"/>
+        android:text="В лоб"/>
+
+    <Button
+        android:id="@+id/buttonGoVlEasy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonGoVl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:onClick="GoVlEasy"
+        android:text="В лоб Через Радио"/>
 
 </RelativeLayout>

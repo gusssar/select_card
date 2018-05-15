@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, VlobActivity.class);
         startActivity(intent);
     }
+
+    public void GoVlEasy(View view) {
+        Intent intent = new Intent(this, EasyVlopActivity.class);
+        startActivity(intent);
+    }
 }

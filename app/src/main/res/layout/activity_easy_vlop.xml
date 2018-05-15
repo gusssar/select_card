@@ -11,62 +11,71 @@
         android:text="Подсчитать"/>
 
     <RelativeLayout
-        android:layout_below="@id/btn_res"
         android:id="@+id/lay_1"
+        android:layout_below="@id/btn_res"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp">
 
-        <TextView
-            android:id="@+id/six_title"
+        <RadioGroup
+            android:id="@+id/rad_group_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="23dp"
-            android:text="6-ки"/>
+            android:orientation="horizontal">
 
-        <CheckedTextView
-            android:id="@+id/ch_box_1_1"
-            android:layout_toRightOf="@id/six_title"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="1"
-            android:textSize="23dp"
-            android:layout_margin="10dp"
-            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
-        <CheckedTextView
-            android:id="@+id/ch_box_1_2"
-            android:layout_toRightOf="@id/ch_box_1_1"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="2"
-            android:textSize="23dp"
-            android:layout_margin="10dp"
-            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
-        <CheckedTextView
-            android:id="@+id/ch_box_1_3"
-            android:layout_toRightOf="@id/ch_box_1_2"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="3"
-            android:textSize="23dp"
-            android:layout_margin="10dp"
-            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
-        <CheckedTextView
-            android:id="@+id/ch_box_1_4"
-            android:layout_toRightOf="@id/ch_box_1_3"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="4"
-            android:textSize="23dp"
-            android:layout_margin="10dp"
-            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+            <TextView
+                android:id="@+id/six_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="23dp"
+                android:text="6-ки"/>
 
+            <RadioButton
+                android:id="@+id/radio_1_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="0"
+                android:textSize="23dp"
+                android:layout_weight="1"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radio_1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="1"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_1_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="2"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_1_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="3"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_1_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="4"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+
+        </RadioGroup>
     </RelativeLayout>
+
     <RelativeLayout
         android:id="@+id/lay_2"
         android:layout_below="@id/lay_1"
@@ -74,56 +83,63 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp">
 
-        <TextView
-            android:id="@+id/seven_title"
+        <RadioGroup
+            android:id="@+id/rad_group_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="23dp"
-            android:text="7-ки"/>
+            android:orientation="horizontal">
 
-        <CheckedTextView
-            android:id="@+id/ch_box_2_1"
-            android:layout_toRightOf="@id/seven_title"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="1"
-            android:textSize="23dp"
-            android:layout_margin="10dp"
-            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
-        <CheckedTextView
-            android:id="@+id/ch_box_2_2"
-            android:layout_toRightOf="@id/ch_box_2_1"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="2"
-            android:textSize="23dp"
-            android:layout_margin="10dp"
-            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
-        <CheckedTextView
-            android:id="@+id/ch_box_2_3"
-            android:layout_toRightOf="@id/ch_box_2_2"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="3"
-            android:textSize="23dp"
-            android:layout_margin="10dp"
-            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
-        <CheckedTextView
-            android:id="@+id/ch_box_2_4"
-            android:layout_toRightOf="@id/ch_box_2_3"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="4"
-            android:textSize="23dp"
-            android:layout_margin="10dp"
-            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+            <TextView
+                android:id="@+id/seven_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textSize="23dp"
+                android:text="7-ки"/>
 
+            <RadioButton
+                android:id="@+id/radio_2_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="0"
+                android:textSize="23dp"
+                android:layout_weight="1"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/radio_2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="1"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_2_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="2"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_2_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="3"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_2_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="4"
+                android:textSize="23dp"
+                android:layout_weight="1" />
 
+        </RadioGroup>
     </RelativeLayout>
 
     <RelativeLayout
@@ -132,8 +148,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp">
-
-
 
         <RadioGroup
             android:id="@+id/rad_group_3"
@@ -145,7 +159,7 @@
                 android:id="@+id/eight_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="5dp"
                 android:textSize="23dp"
                 android:text="8-ки"/>
 
@@ -156,7 +170,8 @@
                 android:layout_margin="5dp"
                 android:text="0"
                 android:textSize="23dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:checked="true"/>
             <RadioButton
                 android:id="@+id/radio_3_1"
                 android:layout_width="match_parent"
