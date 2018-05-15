@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/btn_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ShowRes"
+        android:text="Подсчитать"/>
+
+    <RelativeLayout
+        android:layout_below="@id/btn_res"
+        android:id="@+id/lay_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <ImageView
+            android:id="@+id/img_view_1"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:src="@drawable/cl_6"
+            android:layout_marginTop="30dp"/>
+        <CheckBox
+            android:id="@+id/ch_box_1"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:gravity="right"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay_2"
+        android:layout_below="@id/btn_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/lay_1">
+        <ImageView
+            android:id="@+id/img_view_2"
+            android:layout_width="100dp"
+            android:layout_height="160dp"
+            android:src="@drawable/cl_7"
+            android:layout_marginTop="30dp"/>
+        <CheckBox
+            android:id="@+id/ch_box_2"
+            android:layout_width="100dp"
+            android:layout_height="190dp"
+            android:gravity="right"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+<TextView
+    android:id="@+id/debug_edit"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/lay_2"
+    android:textSize="20dp"
+    android:text="Итого"/>
+
+</RelativeLayout>

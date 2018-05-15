@@ -1,6 +1,7 @@
 package com.gusssar.alexeev.select_card;
 
 import android.content.Context;
+import android.support.annotation.ArrayRes;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
-import android.widget.ListView;
+import android.widget.GridView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class GameCheckActivity extends AppCompatActivity {
-    private ArrayList<String> mCatNameList = new ArrayList<>();
+    private ArrayList<String> mScoreList = new ArrayList<>();
     private MyArrayAdapter mArrayAdapter;
 
     @Override
@@ -26,15 +27,22 @@ public class GameCheckActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_check);
 
-        ListView listView = (ListView) findViewById(R.id.listView);
 
-        initList();
+        GridView gridView = (GridView) findViewById(R.id.gridView);
 
-        mArrayAdapter = new MyArrayAdapter(this, R.layout.list_item,
-                android.R.id.text1, mCatNameList);
+       // initList();
+        mScoreList.add("1");
+        mScoreList.add("2");
+        mScoreList.add("3");
+        mScoreList.add("4");
+        mScoreList.add("5");
 
-        listView.setAdapter(mArrayAdapter);
-        listView.setOnItemClickListener(myOnItemClickListener);
+
+        //шо то тут не чисто!
+        mArrayAdapter = new MyArrayAdapter(this, R.layout.list_item, android.R.id.text1, mScoreList);
+
+        gridView.setAdapter(mArrayAdapter);
+        gridView.setOnItemClickListener(myOnItemClickListener);
     }
 
     public void onClick(View view) {
@@ -48,13 +56,13 @@ public class GameCheckActivity extends AppCompatActivity {
                 .show();
     }
 
-    private void initList() {
-        mCatNameList.add("Grumpy Cat");
-        mCatNameList.add("Colonel Meow");
-        mCatNameList.add("Oskar the Blind Cat");
-        mCatNameList.add("Nala Cat");
-        mCatNameList.add("Hamilton the Hipster Cat");
-    }
+  //  private void initList() {
+  //      mScoreList.add("1");
+  //      mScoreList.add("2");
+  //      mScoreList.add("3");
+  //      mScoreList.add("4");
+  //      mScoreList.add("5");
+  //  }
 
     AdapterView.OnItemClickListener myOnItemClickListener = new AdapterView.OnItemClickListener() {
 
@@ -88,24 +96,24 @@ public class GameCheckActivity extends AppCompatActivity {
             notifyDataSetChanged();
         }
 
-        public List<Integer> getCheckedItemPositions() {
-            List<Integer> checkedItemPositions = new ArrayList<>();
+     public List<Integer> getCheckedItemPositions() {
+         List<Integer> checkedItemPositions = new ArrayList<>();
 
-            for (int i = 0; i < mCheckedMap.size(); i++) {
-                if (mCheckedMap.get(i)) {
-                    (checkedItemPositions).add(i);
-                }
-            }
+         for (int i = 0; i < mCheckedMap.size(); i++) {
+             if (mCheckedMap.get(i)) {
+                 (checkedItemPositions).add(i);
+             }
+         }
 
-            return checkedItemPositions;
-        }
+         return checkedItemPositions;
+     }
 
         List<String> getCheckedItems() {
             List<String> checkedItems = new ArrayList<>();
 
             for (int i = 0; i < mCheckedMap.size(); i++) {
                 if (mCheckedMap.get(i)) {
-                    (checkedItems).add(mCatNameList.get(i));
+                   (checkedItems).add(mScoreList.get(i)); //тоже посмотри!!!
                 }
             }
 
@@ -124,7 +132,7 @@ public class GameCheckActivity extends AppCompatActivity {
 
             CheckedTextView checkedTextView = (CheckedTextView) row
                     .findViewById(R.id.checkedTextView);
-            checkedTextView.setText(mCatNameList.get(position));
+            checkedTextView.setText(mScoreList.get(position));  //тоже посмотри!!!
 
             Boolean checked = mCheckedMap.get(position);
             if (checked != null) {
@@ -133,5 +141,5 @@ public class GameCheckActivity extends AppCompatActivity {
 
             return row;
         }
-    }
+  }
 }

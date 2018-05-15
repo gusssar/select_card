@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <Button
+        android:id="@+id/btn_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="ShowRes"
+        android:text="Подсчитать"/>
+
+    <RelativeLayout
+        android:layout_below="@id/btn_res"
+        android:id="@+id/lay_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/six_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="23dp"
+            android:text="6-ки"/>
+
+        <CheckedTextView
+            android:id="@+id/ch_box_1_1"
+            android:layout_toRightOf="@id/six_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="1"
+            android:textSize="23dp"
+            android:layout_margin="10dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+        <CheckedTextView
+            android:id="@+id/ch_box_1_2"
+            android:layout_toRightOf="@id/ch_box_1_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="2"
+            android:textSize="23dp"
+            android:layout_margin="10dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+        <CheckedTextView
+            android:id="@+id/ch_box_1_3"
+            android:layout_toRightOf="@id/ch_box_1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="3"
+            android:textSize="23dp"
+            android:layout_margin="10dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+        <CheckedTextView
+            android:id="@+id/ch_box_1_4"
+            android:layout_toRightOf="@id/ch_box_1_3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="4"
+            android:textSize="23dp"
+            android:layout_margin="10dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/lay_2"
+        android:layout_below="@id/lay_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/seven_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="23dp"
+            android:text="7-ки"/>
+
+        <CheckedTextView
+            android:id="@+id/ch_box_2_1"
+            android:layout_toRightOf="@id/seven_title"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="1"
+            android:textSize="23dp"
+            android:layout_margin="10dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+        <CheckedTextView
+            android:id="@+id/ch_box_2_2"
+            android:layout_toRightOf="@id/ch_box_2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="2"
+            android:textSize="23dp"
+            android:layout_margin="10dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+        <CheckedTextView
+            android:id="@+id/ch_box_2_3"
+            android:layout_toRightOf="@id/ch_box_2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="3"
+            android:textSize="23dp"
+            android:layout_margin="10dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+        <CheckedTextView
+            android:id="@+id/ch_box_2_4"
+            android:layout_toRightOf="@id/ch_box_2_3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="4"
+            android:textSize="23dp"
+            android:layout_margin="10dp"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_3"
+        android:layout_below="@id/lay_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+
+
+        <RadioGroup
+            android:id="@+id/rad_group_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/eight_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="23dp"
+                android:text="8-ки"/>
+
+            <RadioButton
+                android:id="@+id/radio_3_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="0"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="1"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_3_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="2"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_3_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="3"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+            <RadioButton
+                android:id="@+id/radio_3_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="4"
+                android:textSize="23dp"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/debug_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay_3"
+        android:textSize="20dp"
+        android:text="Итого"/>
+
+
+
+</RelativeLayout>

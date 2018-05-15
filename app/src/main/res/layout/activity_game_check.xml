@@ -11,9 +11,22 @@
         android:onClick="onClick"
         android:text="Ваш выбор"/>
 
+    <!--
     <ListView
         android:id="@+id/listView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"/> -->
+
+    <GridView
+        android:layout_margin="10dp"
+        android:id="@+id/gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:horizontalSpacing="30dp"
+        android:numColumns="4"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="30dp" >
+    </GridView>
 
 </LinearLayout>

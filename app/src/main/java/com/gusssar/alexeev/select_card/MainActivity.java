@@ -22,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, GameCheckActivity.class);
         startActivity(intent);
     }
+
+    public void GoVl(View view) {
+        Intent intent = new Intent(this, VlobActivity.class);
+        startActivity(intent);
+    }
 }

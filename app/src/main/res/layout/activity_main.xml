@@ -15,13 +15,22 @@
         android:onClick="GoTab"
         android:text="Переход"/>
     <Button
-        android:id="@+id/buttonGoCh"
+    android:id="@+id/buttonGoCh"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/buttonGo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="0dp"
+    android:onClick="GoCh"
+    android:text="Выбор"/>
+    <Button
+        android:id="@+id/buttonGoVl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonGo"
+        android:layout_below="@+id/buttonGoCh"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="0dp"
-        android:onClick="GoCh"
-        android:text="Выбор"/>
+        android:onClick="GoVl"
+        android:text="Вы лоб"/>
 
 </RelativeLayout>

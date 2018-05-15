@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_gravity="start"
-        android:src="@mipmap/ic_launcher"/>
+        android:layout_width="100dp"
+        android:layout_height="160dp"
+        android:src="@drawable/cl_6"/>
 
     <CheckedTextView
         android:id="@+id/checkedTextView"
+        android:layout_below="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
+
+    <!--
+    <CheckedTextView
+        android:id="@+id/checkedTextView"
+        android:layout_below="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="?android:attr/listPreferredItemHeightSmall"
         android:layout_gravity="end"
         android:checkMark="?android:attr/listChoiceIndicatorMultiple"
-        android:gravity="end|center_vertical"
-        android:paddingStart="?android:attr/listPreferredItemPaddingLeft"
         android:textAppearance="?android:attr/textAppearanceListItemSmall"/>
-
-</LinearLayout>
+    -->
+</RelativeLayout>
